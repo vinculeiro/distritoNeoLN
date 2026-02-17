@@ -1,0 +1,11 @@
+# Forzar UTF-8 para archivos de texto
+* text=auto eol=lf
+*.md text
+*.toml text
+*.yaml text
+*.yml text
+*.html text
+*.css text
+*.scss text
+*.js text
+*.json text
