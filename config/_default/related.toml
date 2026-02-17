@@ -1,0 +1,10 @@
+# Related contents configuration
+# Configuración para relacionar posts, especialmente los de R
+includeNewer = true
+threshold    = 10  # Umbral bajo para mostrar más contenido relacionado (10% de similitud)
+toLower      = false
+
+indices = [
+    { name = "tags", weight = 100 },      # Los tags tienen peso 100
+    { name = "categories", weight = 200 }, # Las categorías tienen más peso (200) para relacionar mejor
+]

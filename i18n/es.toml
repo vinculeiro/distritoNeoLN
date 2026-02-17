@@ -1,0 +1,182 @@
+# Traducciones al español para Hugo Theme Stack
+# Este archivo sobrescribe las traducciones del tema
+
+# Modo oscuro / Dark mode
+[theme_toggle]
+other = "Modo escuro"
+
+# Variantes alternativas para el toggle del modo oscuro
+[dark_mode]
+other = "Modo escuro"
+
+[light_mode]
+other = "Modo claro"
+
+# Etiquetas / Tags
+[tags]
+other = "Etiquetas"
+
+# Nube de etiquetas / Tag cloud
+[tag_cloud]
+other = "Etiquetas"
+
+# Categorías
+[categories]
+other = "Categorías"
+
+# Buscar
+[search]
+other = "Buscar"
+
+# Archivos
+[archives]
+other = "Archivos"
+
+# Inicio / Home
+[home]
+other = "Inicio"
+
+# Ligazóns / Links
+[links]
+other = "Enlaces"
+
+# Títulos de los widgets - COMENTADOS para usar los títulos de params.toml
+# Si quieres usar traducciones aquí, descomenta y cambia los valores
+# [widget.archives]
+# other = "Arquivos"
+# 
+# [widget.categories]
+# other = "Categorías"
+# 
+# [widget.tag_cloud]
+# other = "Etiquetas"
+# 
+# [widget.search]
+# other = "Buscar"
+# 
+# [widget.recent-posts]
+# other = "Artigos recentes"
+# 
+# [widget.related-posts]
+# other = "Artigos relacionados"
+
+# Ler máis
+[read_more]
+other = "Ler máis"
+
+# Tempo de lectura
+[reading_time]
+one = "minuto de lectura"
+other = "minutos de lectura"
+
+# Variantes para el texto completo "Tempo de lectura"
+[reading_time_label]
+other = "Tempo de lectura"
+
+[reading_time_prefix]
+other = "Tempo de lectura"
+
+[reading_time_text]
+other = "Tempo de lectura"
+
+# Contador de palabras
+[word_count]
+one = "palabra"
+other = "palabras"
+
+# Última actualización
+[last_updated]
+other = "Última actualización"
+
+# Publicado
+[published]
+other = "Publicado"
+
+# Formato de fecha en gallego
+[dateFormat]
+other = "galego"
+
+# Artigos relacionados
+[related_posts]
+other = "Artigos relacionados"
+
+# Non hai artigos
+[no_posts]
+other = "No hai artigos"
+
+# Páxina non atopada
+[page_not_found]
+other = "Página no encontrada"
+
+[page_not_found_message]
+other = "La página que buscas no existe."
+
+# Volver ao inicio
+[back_to_home]
+other = "Volver al inicio"
+
+# Táboa de contidos
+[table_of_contents]
+other = "Tabla de contenidos"
+
+# Comentarios
+[comments]
+other = "Comentarios"
+
+# Compartir
+[share]
+other = "Compartir"
+
+# Aviso de cookies
+[cookie_consent_message]
+    other = "Utilizamos cookies para analizar el tráfico de la web. Puedes aceptar o rechazar las cookies."
+[cookie_consent_privacy]
+    other = "Política de privacidad"
+[cookie_consent_accept]
+    other = "Aceptar"
+[cookie_consent_reject]
+    other = "Rechazar"
+
+# Licenza
+[license]
+other = "Licencia"
+
+# Anterior
+[previous]
+other = "Anterior"
+
+# Seguinte
+[next]
+other = "Siguiente"
+
+# Artigos máis recentes
+[newer_posts]
+other = "Artículos más recientes"
+
+# Artigos máis antigos
+[older_posts]
+other = "Artículos más antiguos"
+
+# Todos os artigos
+[all_posts]
+other = "Todos los artículos"
+
+# Non se atoparon resultados
+[no_results]
+other = "No se encontraron resultados"
+
+# Buscar...
+[search_placeholder]
+other = "Buscar..."
+
+# Pechar
+[close]
+other = "Cerrar"
+
+# Menú
+[menu]
+other = "Menú"
+
+# Idioma
+[language]
+other = "Idioma"

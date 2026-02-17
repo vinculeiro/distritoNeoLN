@@ -1,0 +1,87 @@
+# Pages placed under these sections will be shown on homepage and archive page.
+mainSections = ["post"]
+# Output page's full content in RSS.
+rssFullContent = true
+favicon        = "img/logo.png"
+
+# Accepted values: "default", "lastmod"
+# default = see https://gohugo.io/quick-reference/glossary/#default-sort-order
+# lastmod = sort by last modified date, in descending order
+SortBy              = "default"
+
+[footer]
+    since      = 2026
+    customText = ""
+
+[dateFormat]
+    published   = ":date_full"
+    lastUpdated = ":date_full"
+
+[sidebar]
+    #emoji    = "🍥"
+    #emoji    = ""
+    subtitle = "Datos para alumear o futuro"
+    avatar   = "img/logo.png"
+
+[article]
+    headingAnchor = false
+    math          = false
+    readingTime   = true
+
+    [article.license]
+        enabled = true
+        default = "Licenciado baixo CC BY-NC-SA 4.0"
+
+# Breadcrumbs (migas de pan)
+[breadcrumb]
+    enabled = false
+
+[widgets]
+    homepage = [
+        { type = "search", params = { title = "Buscar" } },
+        { type = "archives", params = { limit = 5, title = "Arquivos" } },
+        { type = "categories", params = { limit = 10, title = "Categorías" } },
+        { type = "tag-cloud", params = { limit = 10, title = "Etiquetas" } },
+        { type = "recent-posts", params = { limit = 5, title = "Artigos recentes" } },
+    ]
+    page = [
+        { type = "toc" },
+        # { type = "related-posts", params = { limit = 5, title = "Artigos relacionados" } },
+    ]
+
+[opengraph.twitter]
+    site = ""
+    card = "summary_large_image"
+
+[colorScheme]
+    toggle  = true
+    default = "auto"
+
+# Google Analytics (se carga solo tras consentimiento de cookies)
+# Sustituye G-XXXXXXXXXX por tu Measurement ID de Google Analytics 4
+[googleAnalytics]
+    id = "G-XXXXXXXXXX"
+
+# Aviso de cookies (RGPD)
+[cookieConsent]
+    enabled = true
+    # Enlace a tu política de privacidad (opcional)
+    privacyPolicyUrl = "/privacy/"
+
+## Comments (Giscus - gratuito, usa GitHub Discussions)
+[comments]
+    enabled  = true
+    provider = "giscus"
+
+    [comments.giscus]
+        # Obtén estos valores en https://giscus.app
+        repo             = "TU_USUARIO/distritoNeoLN"
+        repo_id          = "REPO_ID"
+        category         = "Comentarios"
+        category_id      = "CATEGORY_ID"
+        mapping          = "pathname"
+        strict_matching  = true
+        theme            = "preferred_color_scheme"
+        input_position   = "bottom"
+        reactions        = true
+        lazy_loading     = true

@@ -1,0 +1,69 @@
+# Traducións ao galego para Hugo Theme Stack
+# Este arquivo sobrescribe as traducións do tema
+
+toggleMenu = "Ocultar menú"
+darkMode   = "Modo escuro"
+
+[list]
+    section = "Sección"
+
+    [list.page]
+        one   = "{{ .Count }} páxina"
+        other = "{{ .Count }} páxinas"
+
+    [list.subsection]
+        one   = "Subsección"
+        other = "Subseccións"
+
+[article]
+    back            = "Volver"
+    tableOfContents = "Táboa de contidos"
+    relatedContent  = "Contidos relacionados"
+    lastUpdatedOn   = "Última actualización"
+
+    [article.readingTime]
+        one   = "Tempo de lectura {{ .Count }} minuto"
+        other = "Tempo de lectura {{ .Count }} minutos"
+
+[notFound]
+    title    = "Non Atopado"
+    subtitle = "Esta páxina non existe"
+
+[widget]
+    [widget.archives]
+        title = "Arquivos"
+        more  = "Máis"
+
+    [widget.tagCloud]
+        title = "Etiquetas"
+
+    [widget.categoriesCloud]
+        title = "Categorías"
+
+    [widget.recentPosts]
+        title = "Artigos recentes"
+
+    [widget.relatedPosts]
+        title = "Artigos relacionados"
+
+    [widget.search]
+        title = "Buscar"
+
+[search]
+    title       = "Búsqueda"
+    placeholder = "Escribe algo..."
+    resultTitle = "#PAGES_COUNT páxinas en (#TIME_SECONDS segundos)"
+
+# Aviso de cookies
+[cookie_consent_message]
+    other = "Utilizamos cookies para analizar o tráfico da web. Podes aceptar ou rexeitar as cookies."
+[cookie_consent_privacy]
+    other = "Política de privacidade"
+[cookie_consent_accept]
+    other = "Aceptar"
+[cookie_consent_reject]
+    other = "Rexeitar"
+
+[footer]
+    builtWith  = "Creado con {{ .Generator }}"
+    designedBy = "Tema {{ .Theme }} deseñado por {{ .DesignedBy }}"

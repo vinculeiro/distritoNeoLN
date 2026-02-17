@@ -1,0 +1,135 @@
+---
+title: "Análisis de Datos con Quarto y Hugo"
+description: "Ejemplo de post generado con Quarto que Hugo puede procesar"
+date: 2024-02-04
+slug: quarto-ejemplo
+categories:
+  - Data Science
+  - Quarto
+tags:
+  - R
+  - Quarto
+  - Hugo
+  - Análisis de Datos
+math: true
+---
+
+Este es un ejemplo de un post creado con **Quarto** que puede ser procesado por **Hugo**. 
+
+## ¿Qué es Quarto?
+
+Quarto es un sistema de publicación científica y técnica que permite crear documentos reproducibles con código, gráficos y texto.
+
+## Análisis de Datos con R
+
+Vamos a realizar un análisis simple de datos usando R:
+
+```{r}
+#| echo: true
+#| eval: true
+#| warning: false
+#| message: false
+
+# Cargar librerías
+library(ggplot2)
+library(dplyr)
+
+# Crear datos de ejemplo
+set.seed(123)
+datos <- data.frame(
+  x = 1:100,
+  y = cumsum(rnorm(100)) + 50,
+  categoria = rep(c("A", "B"), each = 50)
+)
+
+# Resumen estadístico
+summary(datos$y)
+```
+
+## Visualización
+
+Ahora vamos a crear un gráfico:
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 10
+#| fig-height: 6
+#| fig-cap: "Gráfico de ejemplo generado con Quarto"
+
+ggplot(datos, aes(x = x, y = y, color = categoria)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    title = "Serie Temporal de Ejemplo",
+    x = "Tiempo",
+    y = "Valor",
+    color = "Categoría"
+  ) +
+  theme_minimal()
+```
+
+## Fórmulas Matemáticas
+
+Quarto y Hugo soportan fórmulas matemáticas usando LaTeX. Por ejemplo, la fórmula de la distribución normal:
+
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$
+
+O inline: La media muestral se calcula como $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$.
+
+## Tablas
+
+También podemos crear tablas formateadas:
+
+```{r}
+#| echo: true
+#| eval: true
+#| tbl-cap: "Tabla de resumen estadístico"
+
+datos %>%
+  group_by(categoria) %>%
+  summarise(
+    Media = mean(y),
+    Mediana = median(y),
+    Desviación = sd(y),
+    Mínimo = min(y),
+    Máximo = max(y)
+  ) %>%
+  knitr::kable(digits = 2)
+```
+
+## Código Python
+
+Quarto también soporta Python:
+
+```{python}
+#| echo: true
+#| eval: true
+
+import numpy as np
+import pandas as pd
+
+# Crear datos
+datos_python = pd.DataFrame({
+    'x': range(1, 101),
+    'y': np.cumsum(np.random.randn(100)) + 50
+})
+
+print(f"Media: {datos_python['y'].mean():.2f}")
+print(f"Desviación estándar: {datos_python['y'].std():.2f}")
+```
+
+## Conclusiones
+
+Este ejemplo muestra cómo puedes:
+
+1. Crear posts con código ejecutable (R, Python, etc.)
+2. Generar gráficos y tablas automáticamente
+3. Incluir fórmulas matemáticas
+4. Renderizar todo en un formato que Hugo puede procesar
+
+## Cómo usar este archivo
+
+

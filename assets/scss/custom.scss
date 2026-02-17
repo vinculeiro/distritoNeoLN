@@ -1,0 +1,526 @@
+/*
+    Tipografía personalizada con Montserrat
+    Usando diferentes pesos para crear diversidad tipográfica
+*/
+
+/* Importar Montserrat desde Google Fonts con múltiples pesos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables de tipografía personalizadas */
+:root {
+  /* Fuente base - Montserrat Regular para cuerpo de texto */
+  --base-font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue", sans-serif;
+  
+  /* Fuente para títulos principales - Montserrat Bold */
+  --heading-font-family: "Montserrat", sans-serif;
+  
+  /* Fuente para sidebar - Montserrat Medium */
+  --sidebar-font-family: "Montserrat", sans-serif;
+  
+  /* Fuente para código - mantener monospace */
+  --code-font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Aplicar diferentes pesos según el elemento */
+
+/* Títulos principales (h1) - Montserrat Bold 700 */
+h1, .article-title, .site-title {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Subtítulos (h2) - Montserrat SemiBold 600 */
+h2, .article-subtitle {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Títulos de sección (h3, h4) - Montserrat Medium 500 */
+h3, h4 {
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+}
+
+/* Cuerpo de texto - Montserrat Regular 400 */
+body, p, .article-content, .article-entry {
+  font-family: var(--base-font-family);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* Texto en negrita - Montserrat SemiBold 600 */
+strong, b {
+  font-weight: 600;
+}
+
+/* Sidebar - Montserrat Medium 500 */
+.sidebar, .left-sidebar {
+  font-family: var(--sidebar-font-family);
+  font-weight: 500;
+}
+
+/* Títulos en sidebar - Montserrat SemiBold 600 */
+.sidebar h1, .sidebar h2, .sidebar h3 {
+  font-weight: 600;
+}
+
+/* Enlaces - Montserrat Medium 500 */
+a {
+  font-weight: 500;
+}
+
+/* Botones - Montserrat SemiBold 600 */
+button, .btn {
+  font-family: var(--base-font-family);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Navegación - Montserrat Medium 500 */
+nav, .menu, .main-menu {
+  font-family: var(--base-font-family);
+  font-weight: 500;
+}
+
+/* Cards y elementos destacados - Montserrat Medium 500 */
+.card, .post-card {
+  font-family: var(--base-font-family);
+}
+
+.card-title, .post-card-title {
+  font-weight: 600;
+}
+
+/* Meta información (fechas, tags) - Montserrat Regular 400 */
+.article-meta, .post-meta, .article-date {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+/* Tags y categorías - Montserrat Medium 500 */
+.tag, .category {
+  font-weight: 500;
+  font-size: 0.85em;
+}
+
+/* Citas y blockquotes - Montserrat Regular 400 con estilo itálico */
+blockquote {
+  font-family: var(--base-font-family);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Código - mantener fuente monospace */
+code, pre, .highlight {
+  font-family: var(--code-font-family);
+}
+
+/* Widgets - Montserrat Regular 400 */
+.widget, .widget-title {
+  font-family: var(--base-font-family);
+}
+
+.widget-title {
+  font-weight: 600;
+}
+
+/* Footer - Montserrat Regular 400 */
+footer {
+  font-family: var(--base-font-family);
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+/* Ajustes responsivos para mejor legibilidad */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+/* Mejoras de legibilidad */
+.article-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Ajuste para listas */
+ul, ol {
+  font-weight: 400;
+}
+
+li {
+  line-height: 1.7;
+}
+
+/* Personalización de la distribución de post cards en la página principal */
+/* Grid de post cards - 2 columnas */
+.article-list, .post-list, .article-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Ajuste para pantallas grandes - 2 columnas */
+@media (min-width: 1200px) {
+  .article-list, .post-list, .article-list-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Ajuste para pantallas medianas - 2 columnas */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .article-list, .post-list, .article-list-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Ajuste para móviles - 1 columna */
+@media (max-width: 767px) {
+  .article-list, .post-list, .article-list-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Estilo de las post cards individuales */
+.post-card, .article-card,
+.article-list article,
+.article-list .article-card,
+.post-list .post-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Asegurar que las descripciones se muestren en las post cards */
+.post-card .summary,
+.article-card .summary,
+.article-list article .summary,
+.post-list .post-card .summary {
+  display: block !important;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.post-card .article-excerpt,
+.article-card .article-excerpt,
+.article-list article .article-excerpt {
+  display: block !important;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.post-card:hover, .article-card:hover,
+.article-list article:hover,
+.article-list .article-card:hover,
+.post-list .post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaciado entre cards */
+.post-card + .post-card,
+.article-card + .article-card {
+  margin-top: 0;
+}
+
+/* Ajuste del ancho del panel central y sidebar */
+/* Aumentar el ancho del contenido principal y reducir el sidebar */
+
+/* Grid principal del tema Stack */
+body > .stack-container,
+.stack-container {
+  max-width: 100% !important;
+}
+
+/* Ajuste del grid principal - aumentar contenido, reducir sidebar */
+.stack-container > .grid {
+  grid-template-columns: 1fr 320px !important; /* Reducido de ~380px a 320px */
+  gap: 2rem !important;
+}
+
+/* Contenido principal - más ancho */
+.stack-container > .grid > .left,
+.stack-container > .grid > .main,
+.stack-container > .grid > article,
+.stack-container > .grid > .article-list-wrapper {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Sidebar derecho - más estrecho */
+.stack-container > .grid > .right,
+.stack-container > .grid > .sidebar,
+.right-sidebar {
+  max-width: 320px !important;
+  width: 320px !important;
+  min-width: 320px !important;
+}
+
+/* Ajuste responsivo para pantallas medianas */
+@media (max-width: 1200px) {
+  .stack-container > .grid {
+    grid-template-columns: 1fr 280px !important;
+  }
+  
+  .stack-container > .grid > .right,
+  .stack-container > .grid > .sidebar,
+  .right-sidebar {
+    max-width: 280px !important;
+    width: 280px !important;
+    min-width: 280px !important;
+  }
+}
+
+/* En móviles, sidebar debajo del contenido */
+@media (max-width: 768px) {
+  .stack-container > .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .stack-container > .grid > .right,
+  .stack-container > .grid > .sidebar,
+  .right-sidebar {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+
+/* Aumentar tamaño de letra en los posts */
+/* Tamaño del cuerpo del texto en posts */
+.article-content,
+.article-entry,
+article .article-content,
+article .article-entry,
+.post-content {
+  font-size: 1.75rem !important; /* Tamaño 1.75rem */
+  line-height: 2 !important;
+}
+
+.article-content p,
+.article-entry p,
+article .article-content p,
+article .article-entry p,
+.post-content p {
+  font-size: 1.75rem !important; /* Tamaño 1.75rem */
+  line-height: 2 !important;
+  margin-bottom: 1.2em !important;
+}
+
+/* Tamaño de títulos en posts */
+.article-content h1,
+.article-entry h1,
+article .article-content h1,
+article .article-entry h1,
+.post-content h1 {
+  font-size: 3.2rem !important; /* Aumentado significativamente */
+  line-height: 1.2 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.8em !important;
+  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
+  color: white !important;
+  padding: 0.3em 0.5em !important;
+  display: inline-block !important;
+}
+
+.article-content h2,
+.article-entry h2,
+article .article-content h2,
+article .article-entry h2,
+.post-content h2 {
+  font-size: 2.6rem !important; /* Aumentado significativamente */
+  line-height: 1.3 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.7em !important;
+  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
+  color: white !important;
+  padding: 0.3em 0.5em !important;
+  display: inline-block !important;
+}
+
+.article-content h3,
+.article-entry h3,
+article .article-content h3,
+article .article-entry h3,
+.post-content h3 {
+  font-size: 2.2rem !important; /* Aumentado significativamente */
+  line-height: 1.4 !important;
+  margin-top: 1.3em !important;
+  margin-bottom: 0.6em !important;
+  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
+  color: white !important;
+  padding: 0.3em 0.5em !important;
+  display: inline-block !important;
+}
+
+.article-content h4,
+.article-entry h4,
+article .article-content h4,
+article .article-entry h4,
+.post-content h4 {
+  font-size: 1.9rem !important; /* Aumentado significativamente */
+  line-height: 1.5 !important;
+  margin-top: 1.2em !important;
+  margin-bottom: 0.5em !important;
+  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
+  color: white !important;
+  padding: 0.3em 0.5em !important;
+  display: inline-block !important;
+}
+
+.article-content h5,
+.article-entry h5,
+article .article-content h5,
+article .article-entry h5,
+.post-content h5 {
+  font-size: 1.65rem !important; /* Aumentado significativamente */
+  line-height: 1.5 !important;
+  margin-top: 1.1em !important;
+  margin-bottom: 0.5em !important;
+  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
+  color: white !important;
+  padding: 0.3em 0.5em !important;
+  display: inline-block !important;
+}
+
+.article-content h6,
+.article-entry h6,
+article .article-content h6,
+article .article-entry h6,
+.post-content h6 {
+  font-size: 1.45rem !important; /* Aumentado significativamente */
+  line-height: 1.5 !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.4em !important;
+  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
+  color: white !important;
+  padding: 0.3em 0.5em !important;
+  display: inline-block !important;
+}
+
+/* Tamaño de listas en posts */
+.article-content ul,
+.article-content ol,
+.article-entry ul,
+.article-entry ol,
+article .article-content ul,
+article .article-content ol,
+article .article-entry ul,
+article .article-entry ol {
+  font-size: 1.75rem !important; /* Tamaño 1.75rem */
+  line-height: 2 !important;
+  margin-bottom: 1.2em !important;
+}
+
+.article-content li,
+.article-entry li,
+article .article-content li,
+article .article-entry li {
+  font-size: 1.75rem !important; /* Tamaño 1.75rem */
+  line-height: 2 !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Tamaño de otros elementos en posts */
+.article-content blockquote,
+.article-entry blockquote {
+  font-size: 1.3rem !important;
+  line-height: 1.9 !important;
+}
+
+.article-content code,
+.article-entry code {
+  font-size: 1.15rem !important;
+}
+
+.article-content pre,
+.article-entry pre {
+  font-size: 1.1rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Ajuste responsivo para móviles */
+@media (max-width: 768px) {
+  .article-content,
+  .article-entry,
+  article .article-content,
+  article .article-entry {
+    font-size: 1.2rem !important;
+  }
+  
+  .article-content p,
+  .article-entry p {
+    font-size: 1.2rem !important;
+  }
+  
+  .article-content h1,
+  .article-entry h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .article-content h2,
+  .article-entry h2 {
+    font-size: 2.1rem !important;
+  }
+  
+  .article-content h3,
+  .article-entry h3 {
+    font-size: 1.8rem !important;
+  }
+  
+  .article-content h4,
+  .article-entry h4 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Estilos para el ampliador de imágenes */
+/* Hacer que las imágenes en posts sean clicables y tengan un efecto hover */
+.article-content img,
+.article-entry img,
+article img {
+  cursor: pointer !important;
+  transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+.article-content img:hover,
+.article-entry img:hover,
+article img:hover {
+  opacity: 0.9 !important;
+  transform: scale(1.02) !important;
+}
+
+/* Excluir imágenes que ya están en galerías PhotoSwipe */
+.article-content .pswp__img,
+.article-entry .pswp__img,
+article .pswp__img {
+  cursor: default !important;
+}
+
+.article-content .pswp__img:hover,
+.article-entry .pswp__img:hover,
+article .pswp__img:hover {
+  opacity: 1 !important;
+  transform: none !important;
+}

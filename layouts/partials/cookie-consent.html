@@ -1,0 +1,134 @@
+{{- if and .Site.Params.cookieConsent.enabled .Site.Params.googleAnalytics.id -}}
+<style>
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--card-background, #1a1a2e);
+  color: var(--body-text-color, #eaeaea);
+  padding: 1rem 1.5rem;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+  z-index: 9999;
+  font-family: var(--base-font-family, inherit);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.cookie-consent__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.cookie-consent__text {
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+.cookie-consent__link {
+  color: var(--accent-color, #4fc3f7);
+  text-decoration: underline;
+  margin-left: 0.25rem;
+}
+.cookie-consent__link:hover { opacity: 0.9; }
+.cookie-consent__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+.cookie-consent__btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+.cookie-consent__btn:hover { opacity: 0.9; }
+.cookie-consent__btn--accept {
+  background: var(--accent-color, #4fc3f7);
+  color: #1a1a2e;
+}
+.cookie-consent__btn--reject {
+  background: transparent;
+  color: var(--body-text-color, #eaeaea);
+  border: 1px solid currentColor;
+}
+@media (max-width: 600px) {
+  .cookie-consent__content { flex-direction: column; align-items: stretch; }
+  .cookie-consent__actions { justify-content: flex-end; }
+}
+</style>
+
+<script>
+(function() {
+  var STORAGE_KEY = 'cookie-consent';
+  var GA_ID = {{ .Site.Params.googleAnalytics.id | json }};
+  var MSG = {{ (i18n "cookie_consent_message" | default "Utilizamos cookies para analizar o tráfico da web e mellorar a túa experiencia. Podes aceptar ou rexeitar as cookies.") | json }};
+  var PRIVACY_LABEL = {{ (i18n "cookie_consent_privacy" | default "Política de privacidade") | json }};
+  var PRIVACY_URL = {{ (.Site.Params.cookieConsent.privacyPolicyUrl | default "") | json }};
+  var ACCEPT = {{ (i18n "cookie_consent_accept" | default "Aceptar") | json }};
+  var REJECT = {{ (i18n "cookie_consent_reject" | default "Rexeitar") | json }};
+
+  function getConsent() {
+    try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+  }
+  function setConsent(v) {
+    try { localStorage.setItem(STORAGE_KEY, v); } catch (e) {}
+  }
+  function loadGA() {
+    if (!GA_ID || GA_ID === 'G-XXXXXXXXXX') return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', GA_ID, { anonymize_ip: true });
+  }
+
+  function createBanner() {
+    var html = '<div id="cookie-consent-banner" class="cookie-consent" role="dialog" aria-label="Aviso de cookies">';
+    html += '<div class="cookie-consent__content"><p class="cookie-consent__text">' + MSG;
+    if (PRIVACY_URL) html += ' <a href="' + PRIVACY_URL + '" class="cookie-consent__link">' + PRIVACY_LABEL + '</a>';
+    html += '</p><div class="cookie-consent__actions">';
+    html += '<button type="button" id="cookie-consent-accept" class="cookie-consent__btn cookie-consent__btn--accept">' + ACCEPT + '</button>';
+    html += '<button type="button" id="cookie-consent-reject" class="cookie-consent__btn cookie-consent__btn--reject">' + REJECT + '</button>';
+    html += '</div></div></div>';
+    var div = document.createElement('div');
+    div.innerHTML = html;
+    return div.firstElementChild;
+  }
+
+  function init() {
+    var consent = getConsent();
+    if (consent === 'accepted') { loadGA(); return; }
+    if (consent === 'rejected') return;
+
+    var banner = createBanner();
+    document.body.appendChild(banner);
+    document.getElementById('cookie-consent-accept').onclick = function() {
+      setConsent('accepted');
+      loadGA();
+      banner.remove();
+    };
+    document.getElementById('cookie-consent-reject').onclick = function() {
+      setConsent('rejected');
+      banner.remove();
+    };
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+{{- end -}}

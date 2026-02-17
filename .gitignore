@@ -1,0 +1,12 @@
+public
+resources
+.hugo_build.lock
+.DS_Store
+assets/jsconfig.json
+.Rproj.user
+
+/.quarto/
+
+# Archivos .md generados desde .qmd (mantener solo .qmd como fuente)
+content/post/**/*.md
+!content/post/**/index.md
