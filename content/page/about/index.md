@@ -9,40 +9,18 @@ menu:
 comments: false
 ---
 
-## Sobre DistritoNeoDeza
+## Sobre DistritoNeoLN
 
-**DistritoNeoDeza** é un espazo dixital dedicado a explorar a política, a xestión pública e a vida en comunidade desde unha perspectiva baseada en datos (*data-driven*). A nosa misión é achegar á cidadanía análises claros, accesibles e rigorosos que permitan comprender mellor como funcionan as políticas públicas e como poden mellorarse mediante datos, evidencia e participación.
+**DistritoNeoLN** é un espazo dixital dedicado a explorar a política, a xestión pública e a vida en comunidade desde unha perspectiva baseada en datos (*data-driven*). Tamén caerá, de cando en vez, algo de opinión. Mais iso irase vendo. O rizoma crece pouco a pouco.
 
-### A nosa visión
+### Dende onde?
 
-O proxecto combina unha mirada futurista e optimista, inspirada no solarpunk e na estética anime, cun forte ancoraxe territorial no Deza entendido como laboratorio de innovación social. Desde este enfoque, o blog ofrece:
+O proxecto combina unha mirada futurista e optimista, inspirada no solarpunk e na perspectiva do anime, sen perder pé na ideosincrasia dun país mergullado na dó por un mundo que desapareceu. 
 
-### Que ofrecemos
+### Cara onde?
 
-#### 📊 Análise de políticas baseadas en evidencia
+Para que neste *interregno* non aparezan os monstros poñemos a vista alá lonxe, onde tan só se escoiten os ecos da nosa voz, coa convicción xusta e irrevocable de que se pode imaxinar unha Galicia futurista que mire ao ceo como facía Luke Skywalker en Tatooine.
 
-Análises rigorosos que utilizan datos e evidencia para comprender e avaliar as políticas públicas, sempre co obxectivo de mellorar a toma de decisións e a calidade dos servizos públicos.
+### Por que?
 
-#### 📈 Visualizacións e narrativas de datos
-
-Visualizacións e narrativas de datos que axudan a entender problemas complexos de forma clara e accesible, transformando información técnica en coñecemento comprensible para toda a cidadanía.
-
-#### 💬 Debates informados
-
-Espazos de debate informado sobre servizos públicos, gobernanza e calidade democrática, sempre baseados en datos e evidencia, non en opinións sen fundamento.
-
-#### 🚀 Propostas e proxectos innovadores
-
-Propostas e proxectos que buscan mellorar a vida cotiá mediante tecnoloxía accesible, sustentabilidade e participación cidadá, sempre coa mirada posta no futuro.
-
-#### 🌱 Territorio como ecosistema de futuro
-
-Unha visión do territorio como ecosistema de futuro, onde a comunidade e os datos se combinan para imaxinar solucións novas e innovadoras que melloren a calidade de vida de todas e todos.
-
-### A nosa misión
-
-En conxunto, **DistritoNeoDeza** preséntase como un nodo de pensamento crítico e creativo, onde a política, os datos e a comunidade se encontran para crear un futuro mellor, máis xusto e máis sustentable.
-
----
-
-*Datos para alumear o futuro*
+Polo impulso egoísta de participar nos debates nun momento convulso onde, quizais, a calma sexa o mellor antídoto fronte á irracionalidade.

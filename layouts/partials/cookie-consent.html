@@ -1,4 +1,4 @@
-{{- if and .Site.Params.cookieConsent.enabled .Site.Params.googleAnalytics.id -}}
+{{- if .Site.Params.cookieConsent.enabled -}}
 <style>
 .cookie-consent {
   position: fixed;
@@ -68,7 +68,7 @@
 <script>
 (function() {
   var STORAGE_KEY = 'cookie-consent';
-  var GA_ID = {{ .Site.Params.googleAnalytics.id | jsonify }};
+  var GA_ID = {{ (.Site.Params.googleAnalytics.id | default "G-XXXXXXXXXX") | jsonify }};
   var MSG = {{ (i18n "cookie_consent_message" | default "Utilizamos cookies para analizar o tráfico da web e mellorar a túa experiencia. Podes aceptar ou rexeitar as cookies.") | jsonify }};
   var PRIVACY_LABEL = {{ (i18n "cookie_consent_privacy" | default "Política de privacidade") | jsonify }};
   var PRIVACY_URL = {{ (.Site.Params.cookieConsent.privacyPolicyUrl | default "") | jsonify }};
@@ -107,6 +107,10 @@
   }
 
   function init() {
+    if (document.getElementById('cookie-consent-banner')) return;
+    if (window.location.search.indexOf('reset_cookies=1') !== -1) {
+      setConsent('');
+    }
     var consent = getConsent();
     if (consent === 'accepted') { loadGA(); return; }
     if (consent === 'rejected') return;
