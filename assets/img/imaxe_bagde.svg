@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1200mm"
+   height="630mm"
+   viewBox="0 0 1200 630"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="imaxe_bagde.svg"
+   inkscape:export-filename="imaxe_bagde.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.12708801"
+     inkscape:cx="1876.6523"
+     inkscape:cy="1302.2472"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       width="1200"
+       height="630"
+       fill="#b0d0ab"
+       id="background"
+       x="1.4210855e-13"
+       y="1.1368684e-13"
+       style="stroke-width:4.34742" />
+    <rect
+       x="-2.8827801"
+       y="249.31383"
+       width="1198.4834"
+       height="131.15741"
+       fill="#ffd700"
+       stroke="#000000"
+       stroke-width="26.5961"
+       id="horizontal-bar"
+       style="stroke:none"
+       transform="matrix(0.99999998,2.1550571e-4,0.01156297,0.99993315,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:131.403px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.08344;stroke-miterlimit:20;stroke-dasharray:none;stroke-opacity:1"
+       x="600"
+       y="293.91833"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="600"
+         y="293.91833"
+         style="stroke:#000000;stroke-width:1.08344;stroke-dasharray:none;stroke-opacity:1">DistritoNeoLN</tspan></text>
+  </g>
+</svg>

@@ -307,15 +307,14 @@ body > .stack-container,
   }
 }
 
-/* Aumentar tamaño de letra en los posts */
 /* Tamaño del cuerpo del texto en posts */
 .article-content,
 .article-entry,
 article .article-content,
 article .article-entry,
 .post-content {
-  font-size: 1.75rem !important; /* Tamaño 1.75rem */
-  line-height: 2 !important;
+  font-size: 1.45rem !important;
+  line-height: 1.85 !important;
 }
 
 .article-content p,
@@ -323,25 +322,26 @@ article .article-entry,
 article .article-content p,
 article .article-entry p,
 .post-content p {
-  font-size: 1.75rem !important; /* Tamaño 1.75rem */
-  line-height: 2 !important;
+  font-size: 1.45rem !important;
+  line-height: 1.85 !important;
   margin-bottom: 1.2em !important;
 }
 
-/* Tamaño de títulos en posts */
+/* Tamaño de títulos en posts - reducido, fondo amarelo dourado máis claro */
 .article-content h1,
 .article-entry h1,
 article .article-content h1,
 article .article-entry h1,
 .post-content h1 {
-  font-size: 3.2rem !important; /* Aumentado significativamente */
+  font-size: 2rem !important;
   line-height: 1.2 !important;
   margin-top: 1.5em !important;
   margin-bottom: 0.8em !important;
-  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
-  color: white !important;
+  background-color: rgba(235, 218, 100, 1) !important; /* Amarelo dourado máis claro */
+  color: #1a1a2e !important;
   padding: 0.3em 0.5em !important;
-  display: inline-block !important;
+  display: block !important;
+  width: max-content !important;
 }
 
 .article-content h2,
@@ -349,14 +349,15 @@ article .article-entry h1,
 article .article-content h2,
 article .article-entry h2,
 .post-content h2 {
-  font-size: 2.6rem !important; /* Aumentado significativamente */
+  font-size: 1.7rem !important;
   line-height: 1.3 !important;
   margin-top: 1.5em !important;
   margin-bottom: 0.7em !important;
-  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
-  color: white !important;
+  background-color: rgba(235, 218, 100, 1) !important; /* Amarelo dourado máis claro */
+  color: #1a1a2e !important;
   padding: 0.3em 0.5em !important;
-  display: inline-block !important;
+  display: block !important;
+  width: max-content !important;
 }
 
 .article-content h3,
@@ -364,14 +365,15 @@ article .article-entry h2,
 article .article-content h3,
 article .article-entry h3,
 .post-content h3 {
-  font-size: 2.2rem !important; /* Aumentado significativamente */
+  font-size: 1.5rem !important;
   line-height: 1.4 !important;
   margin-top: 1.3em !important;
   margin-bottom: 0.6em !important;
-  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
-  color: white !important;
+  background-color: rgba(235, 218, 100, 1) !important; /* Amarelo dourado máis claro */
+  color: #1a1a2e !important;
   padding: 0.3em 0.5em !important;
-  display: inline-block !important;
+  display: block !important;
+  width: max-content !important;
 }
 
 .article-content h4,
@@ -379,14 +381,15 @@ article .article-entry h3,
 article .article-content h4,
 article .article-entry h4,
 .post-content h4 {
-  font-size: 1.9rem !important; /* Aumentado significativamente */
+  font-size: 1.35rem !important;
   line-height: 1.5 !important;
   margin-top: 1.2em !important;
   margin-bottom: 0.5em !important;
-  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
-  color: white !important;
+  background-color: rgba(235, 218, 100, 1) !important; /* Amarelo dourado máis claro */
+  color: #1a1a2e !important;
   padding: 0.3em 0.5em !important;
-  display: inline-block !important;
+  display: block !important;
+  width: max-content !important;
 }
 
 .article-content h5,
@@ -394,14 +397,15 @@ article .article-entry h4,
 article .article-content h5,
 article .article-entry h5,
 .post-content h5 {
-  font-size: 1.65rem !important; /* Aumentado significativamente */
+  font-size: 1.25rem !important;
   line-height: 1.5 !important;
   margin-top: 1.1em !important;
   margin-bottom: 0.5em !important;
-  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
-  color: white !important;
+  background-color: rgba(235, 218, 100, 1) !important; /* Amarelo dourado máis claro */
+  color: #1a1a2e !important;
   padding: 0.3em 0.5em !important;
-  display: inline-block !important;
+  display: block !important;
+  width: max-content !important;
 }
 
 .article-content h6,
@@ -409,14 +413,15 @@ article .article-entry h5,
 article .article-content h6,
 article .article-entry h6,
 .post-content h6 {
-  font-size: 1.45rem !important; /* Aumentado significativamente */
+  font-size: 1.15rem !important;
   line-height: 1.5 !important;
   margin-top: 1em !important;
   margin-bottom: 0.4em !important;
-  background-color: rgba(206, 177, 13, 1) !important; /* Amarillo dorado opaco */
-  color: white !important;
+  background-color: rgba(235, 218, 100, 1) !important; /* Amarelo dourado máis claro */
+  color: #1a1a2e !important;
   padding: 0.3em 0.5em !important;
-  display: inline-block !important;
+  display: block !important;
+  width: max-content !important;
 }
 
 /* Tamaño de listas en posts */
@@ -428,8 +433,8 @@ article .article-content ul,
 article .article-content ol,
 article .article-entry ul,
 article .article-entry ol {
-  font-size: 1.75rem !important; /* Tamaño 1.75rem */
-  line-height: 2 !important;
+  font-size: 1.45rem !important;
+  line-height: 1.85 !important;
   margin-bottom: 1.2em !important;
 }
 
@@ -437,8 +442,8 @@ article .article-entry ol {
 .article-entry li,
 article .article-content li,
 article .article-entry li {
-  font-size: 1.75rem !important; /* Tamaño 1.75rem */
-  line-height: 2 !important;
+  font-size: 1.45rem !important;
+  line-height: 1.85 !important;
   margin-bottom: 0.5em !important;
 }
 
@@ -466,32 +471,32 @@ article .article-entry li {
   .article-entry,
   article .article-content,
   article .article-entry {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
   }
   
   .article-content p,
   .article-entry p {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
   }
   
   .article-content h1,
   .article-entry h1 {
-    font-size: 2.5rem !important;
+    font-size: 1.7rem !important;
   }
   
   .article-content h2,
   .article-entry h2 {
-    font-size: 2.1rem !important;
+    font-size: 1.5rem !important;
   }
   
   .article-content h3,
   .article-entry h3 {
-    font-size: 1.8rem !important;
+    font-size: 1.35rem !important;
   }
   
   .article-content h4,
   .article-entry h4 {
-    font-size: 1.6rem !important;
+    font-size: 1.25rem !important;
   }
 }
 

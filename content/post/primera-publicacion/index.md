@@ -1,0 +1,68 @@
+---
+title: "DistritoNeoLN | Inicio"
+description: "Comeza una nova era, adéntrate, participa!"
+date: 2025-02-17
+slug: primera-publicacion
+image: cover.png
+categories:
+  - administracion-local
+  - administracion-autonomica
+  - territorio-e-urbanismo
+  - medio-ambiente
+  - servizos-publicos
+  - participacion-e-transparencia
+tags:
+  - Primeira publicación
+weight: 100
+---
+
+## Que é DistritoNeoLN?
+
+**DistritoNeoLN** é un espazo dixital nacido para explorar a realidade cunha perspectiva baseada en datos. Non só números e gráficos: tamén reflexión, opinión fundamentada e, en definitiva, participación no debate público nun momento onde a información de calidade é máis necesaria que nunca.
+
+A páxina [Sobre](/about/) resume a filosofía do proxecto: unha mirada **futurista e optimista**, influenciada polo solarpunk e pola idea dunha Galicia que mira ao futuro sen esquecer a súa identidade. Este blog pretende ser unha pequena contribución para que, neste *interregno* incerto, se poidan soster conversas máis tranquilas e baseadas en evidencia.
+
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVna2pxbGdjZHZicWQ4ZGZybTE5bzJnbngwc2l0ZTllZHhjNDA0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ygN59Yayt8tpGxFrB9/giphy.gif" alt="Perspectiva data-driven" />
+
+## Liña editorial: as categorías
+
+O contido organízase en **seis categorías** que se artellan arredor dunha liña editorial que se irá construíndo:
+
+- <span style="background-color: #2a9d8f; color: #fff; padding: 0.15em 0.4em; border-radius: 4px;">**Administración local**</span> — Concellos, goberno municipal e competencias locais
+- <span style="background-color: #4361ee; color: #fff; padding: 0.15em 0.4em; border-radius: 4px;">**Administración autonómica**</span> — Xunta, Parlamento e políticas da Comunidade
+- <span style="background-color: #7209b7; color: #fff; padding: 0.15em 0.4em; border-radius: 4px;">**Territorio e Urbanismo**</span> — Ordenación, solo, vivenda e mobilidade
+- <span style="background-color: #2d6a4f; color: #fff; padding: 0.15em 0.4em; border-radius: 4px;">**Medio ambiente**</span> — Cambio climático, residuos, auga e enerxía
+- <span style="background-color: #e63946; color: #fff; padding: 0.15em 0.4em; border-radius: 4px;">**Servizos Públicos**</span> — Educación, sanidade e benestar social
+- <span style="background-color: #f4a261; color: #1a1a2e; padding: 0.15em 0.4em; border-radius: 4px;">**Participación e Transparencia**</span> — Datos abertos, participación cidadá e reutilización da información pública
+
+As **etiquetas** permiten máis flexibilidade: técnicas, ferramentas, lugares e temas concretos que se irán engadindo segundo o contido.
+
+## Funcionalidades da web
+
+O sitio ofréceche varias ferramentas para navegar e interactuar:
+
+| Funcionalidade | Descrición |
+|----------------|------------|
+| **Busca** | Localiza artigos por palabras chave |
+| **Arquivo** | Accede aos artigos ordenados cronoloxicamente |
+| **Categorías** | Explora por temas principais |
+| **Etiquetas** | Descobre contido por temas específicos |
+| **Comentarios** | Deixa a túa opinión vía Giscus (GitHub Discussions) |
+| **Modo escuro/claro** | Alterna a aparencia segundo a túa preferencia |
+| **Privacidade** | Aviso de cookies e política de privacidade claras |
+
+A análise de visitas faise con **Google Analytics**, activado só tras o teu consentimento de cookies. O noso compromiso é coa transparencia tamén no uso dos teus datos.
+
+## Un vídeo para comezar
+
+Para afondar na idea de como os datos poden transformar a nosa forma de ver o mundo e tomar decisións, podes ver esta charla de Hans Rosling sobre estatísticas e visualización:
+
+{{< youtube "hVimVzgtD6w" >}}
+
+*"200 países, 200 anos en 4 minutos" — unha visión optimista sobre a evolución da humanidade a través dos datos.*
+
+## Cara adiante
+
+O rizoma crece pouco a pouco. Agardamos que este espazo sexa útil para quen quere entender mellor a política local e gallega, con datos na man e a vista posta no futuro.
+
+<img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Construindo o futuro" />
