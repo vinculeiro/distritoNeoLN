@@ -6,3 +6,5 @@ menu:
         params:
             icon: home
 ---
+
+Comeza unha nova era. Adéntrate, participa.
